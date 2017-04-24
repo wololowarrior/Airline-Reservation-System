@@ -1,0 +1,93 @@
+body{
+	background-color:#E1F5FE;
+}
+.xcon{
+	  width:200px;
+  text-transform: capitalize;
+ 
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  transition-property:box-shadow;
+  transition-duration:0.50s;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #EF5C54;
+  font-size: 20px;
+}
+.xcon:hover{
+	outline: none;
+    border-color: #26C6DA;
+    box-shadow: 0 0 10px #0D47A1;
+
+	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	color: #EF5C54;
+}
+
+.one{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:25px;
+	padding-bottom:5px;
+	color:#039BE5;
+}
+	 
+	 .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#b1{
+   background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+ align:center;  
+  
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+  margin-bottom:3px;
+    margin-right:3px;
+    margin-left: 613px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}

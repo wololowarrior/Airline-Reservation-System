@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>
+		Contact Us
+	</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<link rel="stylesheet" href="contactuscss.css" type="text/css">
+	<script>
+			function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+		</script>
+
+	</head>
+<body>
+<p id="one">ARS DEVELOPERS</p>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="ARS.php">Main Page
+  <a href="https://www.facebook.com/">Like Us</a>
+  <a href="deleteticket.php">Cancellations</a>
+  <span>Any Comments?<br/><span>Write To Us</span></span>	
+    <a href="mailto:harshil.unique1@gmail.com">Email Harshil
+    <a href="mailto:tuhinkhare3@gmail.com">Email Tuhin
+  </a>			
+</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="side">☰</span>
+
+<div id="div1"> Developed by
+  <div id="div2">Harshil Gupta Roll no:-27<br/>Tuhin Khare Roll no:-09</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bAirTicketing1.jpg" style="width:100%">
+  <div class="text">Travel With Us</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">To Places</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_fjords_wide.jpg" style="width:100%">
+  <div class="text">You've Never Been</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+a{
+	text-decoration:none;
+}
+body{
+	background-color:#EDE7F6;
+}
+#main{
+	background:#E1F5FE;
+	text-align:center;
+	font-size:25px;
+	border:1px solid black;
+	margin-left:50px;
+	margin-right:50px;
+	font-family:pt serif;
+	color:#6200EA;
+}
+
+#pnr{
+	border-left:2px solid black;
+	padding-left:4px;
+	margin-top:4px;	
+}

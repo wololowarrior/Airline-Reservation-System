@@ -1,0 +1,35 @@
+body{
+    background-color: #e57373;
+}
+div{
+    margin-left: 500px;
+}
+.button2 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+ align:center;  
+  
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+  margin-bottom:3px;
+    margin-right:3px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: #E7E7E7; 
+    color: black; 
+    border: 1px solid #4CAF50;
+}
+a{
+    text-decoration: none;
+    font-size: 19px;
+    font-family: rockwell;
+}

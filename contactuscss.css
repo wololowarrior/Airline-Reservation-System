@@ -1,0 +1,215 @@
+body{
+    background-color: #E7E7E7;
+}
+#one{
+
+ 	 border-style: solid;
+border-width: 15px 13px 15px 15px;
+-moz-border-image: url(border.png) 29 29 30 stretch;
+-webkit-border-image: url(border.png) 29 29 30 stretch;
+-o-border-image: url(border.png) 29 29 30 stretch;
+border-image: url(border.png) 29 29 30 fill stretch;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 25px;
+	color: #92F22A;
+}
+#div1 {
+	background: #FDD09F;
+    position: relative;
+    margin: auto;
+    height: 110px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    
+    -webkit-perspective: 125px;
+    -webkit-animation: mymove 5s infinite;
+    
+    perspective: 170px;
+    animation: mymove 5s infinite;
+    text-align: center;
+    font-family: Lucida console, Geneva, sans-serif;
+    color: #EE543A;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-perspective-origin: 10px 50%;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {perspective-origin: 10px 50%;}
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: coral;
+    -webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera */
+    transform: rotateX(45deg);
+    color: #EEE657;
+    font-size: 20px;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav span{
+    padding: 8px 8px 8px 32px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 21px;
+    color:#818181;
+    text-align: left;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#side{
+    transition-property:opacity;
+    transition-duration:0.75s;
+    opacity: 0.20;
+}
+#side:hover{
+opacity: 1;
+}
+{box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+/*test*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #CFD8DC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slprev, .slnext,.text {font-size: 11px}
+}
